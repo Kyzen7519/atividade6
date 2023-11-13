@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script src='script.js'> </script>
+    <title>Brasileirão da Velha 2023</title>
+</head>
+<body>  
+    <fieldset>
+        <label>Jogar contra o Computador?</label>
+        <br>
+        <label><input type="radio" name="cpu" id="cpu" checked>Sim</label>
+        <label><input type="radio" name="cpu" id="cpu">Não</label>
+    </fieldset>
+    <select id="playerXImagem" onchange="selectImagemX()">
+        <option value="" align="center"> <-- Player 1 --> </option>
+        <optgroup label="Série A - 2023">
+            <option value="americamineiro">América-MG</option>
+            <option value="cap">Athletico Paranaense</option>
+            <option value="atleticomineiro">Atlético Mineiro</option>
+            <option value="bahia">Bahia</option>
+            <option value="botafogo">Botafogo</option>
+            <option value="corinthias">Corinthias</option>
+            <option value="coritiba">Coritiba</option>
+            <option value="cruzeiro">Cruzeiro</option>
+            <option value="cuiaba">Cuiabá</option>
+            <option value="flamengo">Flamengo</option>
+            <option value="fluminense">Fluminense</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="goias">Goiás</option>
+            <option value="gremio">Gremio</option>
+            <option value="internacional">Internacional</option>
+            <option value="palmeiras">Palmeiras</option>
+            <option value="rbb">Red Bull Bragantino</option>
+            <option value="santos">Santos</option>
+            <option value="saopaulo">São Paulo</option>
+            <option value="vasco">Vasco</option>
+        <optgroup label="Série B - 2023">
+            <option value="ABC">ABC Futebol Clube</option>
+            <option value="atleticogo">Atlético-GO</option>
+            <option value="avai">Avaí</option>
+            <option value="botafogosp">Botafogo-SP</option>
+            <option value="crb">Clube de Regatas Brasil</option>
+            <option value="ceara">Ceará</option>
+            <option value="chapecoense">Chapecoense</option>
+            <option value="criciuma">Criciúma</option>
+            <option value="guarani">Guarani</option>
+            <option value="ituano">Ituano</option>
+            <option value="juventude">Juventude</option>
+            <option value="londrina">Londrina</option>
+            <option value="mirassol">Mirassol</option>
+            <option value="novorizontino">Novorizontino</option>
+            <option value="pontepreta">Ponte Preta</option>
+            <option value="sampaiocorrea">Sampaio Corrêa</option>
+            <option value="sportrecife">Sport Recife</option>
+            <option value="tombense">Tombense</option>
+            <option value="vilanova">Vila Nova</option>
+            <option value="vitoria">Vitória</option>
+    </select>
+        <select id="playerOImagem" onchange="selectImagemO()">
+        <option value="" align="center"> <-- Player 2 --> </option>
+        <optgroup label="Série A - 2023">
+            <option value="americamineiro">América-MG</option>
+            <option value="cap">Athletico Paranaense</option>
+            <option value="atleticomineiro">Atlético Mineiro</option>
+            <option value="bahia">Bahia</option>
+            <option value="botafogo">Botafogo</option>
+            <option value="corinthias">Corinthias</option>
+            <option value="coritiba">Coritiba</option>
+            <option value="cruzeiro">Cruzeiro</option>
+            <option value="cuiaba">Cuiabá</option>
+            <option value="flamengo">Flamengo</option>
+            <option value="fluminense">Fluminense</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="goias">Goiás</option>
+            <option value="gremio">Gremio</option>
+            <option value="internacional">Internacional</option>
+            <option value="palmeiras">Palmeiras</option>
+            <option value="rbb">Red Bull Bragantino</option>
+            <option value="santos">Santos</option>
+            <option value="saopaulo">São Paulo</option>
+            <option value="vasco">Vasco</option>
+        <optgroup label="Série B - 2023">
+            <option value="ABC">ABC Futebol Clube</option>
+            <option value="atleticogo">Atlético-GO</option>
+            <option value="avai">Avaí</option>
+            <option value="botafogosp">Botafogo-SP</option>
+            <option value="crb">Clube de Regatas Brasil</option>
+            <option value="ceara">Ceará</option>
+            <option value="chapecoense">Chapecoense</option>
+            <option value="criciuma">Criciúma</option>
+            <option value="guarani">Guarani</option>
+            <option value="ituano">Ituano</option>
+            <option value="juventude">Juventude</option>
+            <option value="londrina">Londrina</option>
+            <option value="mirassol">Mirassol</option>
+            <option value="novorizontino">Novorizontino</option>
+            <option value="pontepreta">Ponte Preta</option>
+            <option value="sampaiocorrea">Sampaio Corrêa</option>
+            <option value="sportrecife">Sport Recife</option>
+            <option value="tombense">Tombense</option>
+            <option value="vilanova">Vila Nova</option>
+            <option value="vitoria">Vitória</option>
+    </select>
+        <br>
+<table width="150" border="3" align="center" >
+   
+    <tbody>
+        <tr>
+            <td><img src="imagem/transp.png" alt="imagem" id="c1" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c2" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c3" onclick="return checkjogo(id)"/></td>
+        </tr>
+        <tr>
+            <td><img src="imagem/transp.png" alt="imagem" id="c4" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c5" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c6" onclick="return checkjogo(id)"/></td>
+        </tr>
+        <tr>
+            <td><img src="imagem/transp.png" alt="imagem" id="c7" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c8" onclick="return checkjogo(id)"/></td>
+            <td><img src="imagem/transp.png" alt="imagem" id="c9" onclick="return checkjogo(id)"/></td>
+        </tr>
+    </tbody>
+        
+</table>
+<p align="center">
+    <a href="index.html" title="reiniciar"> Reiniciar</a>
+</p>
+</body>
+</html>
